@@ -71,19 +71,8 @@ export async function POST(request: Request) {
             customer_email: data.customer_email!,
             company: data.company || null,
             amount_cents: data.amount_cents || 0,
-            currency: "usd",
-            deal_id: null,
+            description: data.description || "Services",
             created_by: data.created_by!,
-            due_date: new Date(Date.now() + 14 * 86400000)
-              .toISOString()
-              .slice(0, 10),
-            line_items: [
-              {
-                description: data.description || "Services",
-                amount_cents: data.amount_cents || 0,
-                quantity: 1,
-              },
-            ],
           });
           break;
         case "mark_invoice_sent":
