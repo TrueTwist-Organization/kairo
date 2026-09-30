@@ -8,7 +8,7 @@ import { site } from "@/lib/content";
 
 const links = [
   { href: "/#agents", label: "Agents" },
-  { href: "/#solutions", label: "Solutions" },
+  { href: "/#solutions", label: "Services" },
   { href: "/#platform", label: "Platform" },
   { href: "/#results", label: "Results" },
   { href: "/contact", label: "Contact" },
@@ -34,9 +34,7 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className={`glass flex items-center justify-between rounded-full px-4 py-3 shadow-[0_8px_40px_rgba(11,13,18,0.06)] transition-all ${
-            scrolled ? "bg-white/85" : ""
-          }`}
+          className="flex items-center justify-between gap-3 rounded-full border border-line bg-white px-4 py-3 shadow-[0_8px_40px_rgba(11,13,18,0.06)]"
         >
           <Link href="/" className="font-display text-xl font-bold tracking-tight">
             {site.name}

@@ -12,7 +12,7 @@ export function HowItWorks() {
             How it works
           </p>
           <h2 className="font-display mt-3 max-w-2xl text-3xl font-bold tracking-tight sm:text-5xl">
-            We empower your operations with five clear layers
+            How a fully automated AI business is set up
           </h2>
         </Reveal>
 

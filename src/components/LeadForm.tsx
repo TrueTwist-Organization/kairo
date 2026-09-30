@@ -4,12 +4,12 @@ import { FormEvent, useState, type ReactNode } from "react";
 import { Loader2, CheckCircle2 } from "lucide-react";
 
 const interests = [
-  { value: "freight-audit", label: "Freight Audit" },
-  { value: "payables-audit", label: "Payables Audit" },
-  { value: "inventory", label: "Inventory Ops" },
-  { value: "claims", label: "Claims & Deductions" },
-  { value: "full-platform", label: "Full platform" },
-  { value: "other", label: "Other" },
+  { value: "website-design", label: "Website design" },
+  { value: "seo", label: "SEO" },
+  { value: "geo", label: "GEO" },
+  { value: "aeo", label: "AEO" },
+  { value: "mobile-application", label: "Mobile application" },
+  { value: "ai-agent", label: "AI agent" },
 ] as const;
 
 type FormState = {
@@ -26,7 +26,7 @@ const initial: FormState = {
   email: "",
   company: "",
   role: "",
-  interest: "full-platform",
+  interest: "website-design",
   message: "",
 };
 
@@ -68,7 +68,7 @@ export function LeadForm({ type = "demo" }: { type?: "demo" | "contact" }) {
       <div className="rounded-[24px] border border-line bg-bg-elevated p-8 text-center">
         <CheckCircle2 className="mx-auto text-success" size={36} />
         <h3 className="font-display mt-4 text-2xl font-bold">Request received</h3>
-        <p className="mt-2 text-sm text-muted">
+        <p className="mt-2 text-sm text-ink-soft">
           We&apos;ll reply within one business day with next steps for your demo
           or pilot.
         </p>
@@ -196,7 +196,7 @@ function Field({
 }) {
   return (
     <label className={`block ${className}`}>
-      <span className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.12em] text-muted">
+      <span className="mb-1.5 block text-xs font-semibold uppercase tracking-[0.12em] text-ink-soft">
         {label}
         {required ? " *" : ""}
       </span>

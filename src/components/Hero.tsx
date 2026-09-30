@@ -20,7 +20,7 @@ export function Hero() {
             className="accent-chip"
           >
             <Bot size={12} />
-            Enterprise AI agents
+            Cash-flowing AI agency
           </motion.div>
 
           <motion.p
@@ -39,18 +39,18 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-display mt-5 max-w-xl text-[clamp(1.55rem,3.2vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-ink-soft"
           >
-            Agents that run your operations — with humans in control.
+            A fully automated AI business.
           </motion.h1>
 
           <motion.p
             initial={reduce ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.18 }}
-            className="mt-5 max-w-lg text-base leading-relaxed text-muted sm:text-lg"
+            className="mt-5 max-w-lg text-base leading-relaxed text-ink-soft sm:text-lg"
           >
-            Deploy governed agents across SAP, portals, spreadsheets, and
-            inboxes. They audit, execute, and prove outcomes — you approve the
-            sensitive steps.
+            Website design, SEO, GEO, AEO, a mobile application, and an AI
+            agent that researches, writes, follows up, and helps book the next
+            conversation.
           </motion.p>
 
           <motion.div
@@ -76,10 +76,10 @@ export function Hero() {
           >
             <div className="flex items-center gap-2">
               <ShieldCheck size={16} className="text-success" />
-              Outcome guarantees
+              Unhappy? Don&apos;t pay
             </div>
             <div className="h-3.5 w-px bg-line" />
-            <div>Human-in-the-loop approvals</div>
+            <div>Website, SEO, GEO, AEO, app, agent</div>
           </motion.div>
         </div>
 
@@ -101,9 +101,9 @@ export function Hero() {
                   </span>
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.14em] text-white/45">
-                      Active agent
+                      AI agent platform
                     </p>
-                    <p className="text-sm font-semibold">Freight Auditor</p>
+                    <p className="text-sm font-semibold">Cold Email Campaign Agent</p>
                   </div>
                 </div>
                 <span className="rounded-full bg-accent px-2.5 py-1 text-[11px] font-bold text-accent-ink">
@@ -112,17 +112,17 @@ export function Hero() {
               </div>
 
               <p className="font-display mt-6 text-3xl font-bold leading-tight sm:text-4xl">
-                Matching 214 invoices
+                Research a prospect.
                 <br />
-                to contract rates
+                Draft the outreach.
               </p>
 
               <div className="mt-7 space-y-2.5">
                 {[
-                  { step: "Read TMS + contract", state: "done" },
-                  { step: "Browser check supplier portal", state: "done" },
-                  { step: "Flag 3.8% overcharge", state: "active" },
-                  { step: "Wait for finance approval", state: "pending" },
+                  { step: "Read the knowledge base", state: "done" },
+                  { step: "Connect Gmail and calendar", state: "done" },
+                  { step: "Draft with the AI email writer", state: "active" },
+                  { step: "Wait for a person to review", state: "pending" },
                 ].map((row, i) => (
                   <motion.div
                     key={row.step}

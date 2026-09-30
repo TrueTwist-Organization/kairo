@@ -13,7 +13,7 @@ export function Testimonials() {
     <section className="border-y border-line bg-bg-elevated py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-soft">
             Testimonials
           </p>
           <h2 className="font-display mt-3 text-3xl font-bold tracking-tight sm:text-5xl">
@@ -61,7 +61,7 @@ export function Testimonials() {
                   <p className="text-sm font-semibold">{t.name}</p>
                   <p
                     className={`mt-1 text-xs ${
-                      i === index ? "text-white/55" : "text-muted"
+                      i === index ? "text-white/55" : "text-ink-soft"
                     }`}
                   >
                     {t.role}

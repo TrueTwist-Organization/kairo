@@ -39,7 +39,7 @@ const statusMeta: Record<
 export function Agents() {
   const [agents, setAgents] = useState<AgentApiItem[]>([]);
   const [liveRun, setLiveRun] = useState<LiveRunResponse | null>(null);
-  const [activeId, setActiveId] = useState("freight-auditor");
+  const [activeId, setActiveId] = useState("cold-email-agent");
 
   useEffect(() => {
     let cancelled = false;
@@ -83,12 +83,12 @@ export function Agents() {
             Agents
           </p>
           <h2 className="font-display mt-3 max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">
-            Real agents that run your ops — not chatbots
+            Agents that run the follow-up
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
-            Like Duvo-style production agents: they work inside SAP, portals,
-            sheets, and inboxes, pause for human approval, and write outcomes
-            back with evidence.
+            Cold email, lead generation, marketing, and follow-up. They use a
+            chat model, Gmail, Google Calendar, and search, and a person reviews
+            what should not send itself.
           </p>
         </Reveal>
 

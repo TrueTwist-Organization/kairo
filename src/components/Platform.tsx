@@ -9,15 +9,15 @@ export function Platform() {
     <section id="platform" className="scroll-mt-28 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-soft">
             Platform
           </p>
           <h2 className="font-display mt-3 max-w-2xl text-3xl font-bold tracking-tight sm:text-5xl">
-            From process truth to guaranteed outcomes
+            The AI agent platform
           </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-            One evidence-backed context powers audits, transformation plans, and
-            governed automation — not a pile of disconnected tools.
+          <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft sm:text-lg">
+            Connect the tools, launch the offer, let the agent follow up, and
+            read the work on the dashboard.
           </p>
         </Reveal>
 
@@ -34,7 +34,7 @@ export function Platform() {
                   {String(i + 1).padStart(2, "0")}
                 </p>
                 <h3 className="font-display mt-4 text-xl font-bold">{step.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{step.text}</p>
+                <p className="mt-3 text-sm leading-relaxed text-ink-soft">{step.text}</p>
               </motion.div>
             </Reveal>
           ))}
@@ -48,15 +48,15 @@ export function Platform() {
                   Agent pipeline
                 </p>
                 <p className="font-display mt-3 text-2xl font-bold sm:text-3xl">
-                  Capture → Govern → Execute → Prove
+                  Connect → Launch → Automate → Review
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
-                  Agents work where APIs exist — and through the browser where
-                  they don&apos;t — with every sensitive write behind approval.
+                  A chat model, memory, Gmail, Google Calendar, HTTP requests,
+                  and search sit in one workflow. A person reviews the send.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                {["SAP", "TMS", "Portals", "Sheets", "Inbox", "MCP"].map(
+                {["Chat model", "Memory", "Gmail", "Calendar", "HTTP", "Search"].map(
                   (label, i) => (
                     <motion.span
                       key={label}
