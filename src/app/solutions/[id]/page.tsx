@@ -48,7 +48,7 @@ export default async function SolutionPage({ params }: Props) {
             <h1 className="font-display mt-5 text-4xl font-bold tracking-tight sm:text-5xl">
               {solution.title}
             </h1>
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted">
+            <p className="mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
               {solution.description}
             </p>
             <p className="mt-5 inline-flex rounded-full border border-line bg-bg-elevated px-3 py-1.5 text-xs font-semibold text-ink-soft">
@@ -57,7 +57,7 @@ export default async function SolutionPage({ params }: Props) {
 
             <div className="mt-12">
               <h2 className="font-display text-2xl font-bold">The problem</h2>
-              <p className="mt-3 max-w-2xl leading-relaxed text-muted">
+              <p className="mt-3 max-w-2xl leading-relaxed text-ink-soft">
                 {solution.problem}
               </p>
             </div>
@@ -105,7 +105,7 @@ export default async function SolutionPage({ params }: Props) {
             </div>
 
             <div className="rounded-[24px] border border-line bg-bg-elevated p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-soft">
                 More solutions
               </p>
               <div className="mt-4 space-y-3">
@@ -116,7 +116,7 @@ export default async function SolutionPage({ params }: Props) {
                     className="block rounded-2xl border border-line px-4 py-3 transition hover:border-ink/20"
                   >
                     <p className="font-semibold">{item.title}</p>
-                    <p className="mt-1 text-xs text-muted">
+                    <p className="mt-1 text-xs text-ink-soft">
                       {item.metric} {item.metricLabel}
                     </p>
                   </Link>

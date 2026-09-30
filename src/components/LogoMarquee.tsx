@@ -8,8 +8,8 @@ export function LogoMarquee() {
   return (
     <section className="border-y border-line bg-bg-elevated py-8">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <p className="mb-5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted">
-          Trusted by 100+ ops & product teams
+        <p className="mb-5 text-center text-xs font-semibold uppercase tracking-[0.2em] text-ink-soft">
+          Services in one system
         </p>
       </div>
       <div className="overflow-hidden">
@@ -17,7 +17,7 @@ export function LogoMarquee() {
           {items.map((name, i) => (
             <span
               key={`${name}-${i}`}
-              className="font-display whitespace-nowrap text-lg font-semibold text-ink/35"
+              className="font-display whitespace-nowrap text-lg font-semibold text-ink/70"
             >
               {name}
             </span>

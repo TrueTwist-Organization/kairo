@@ -19,11 +19,11 @@ export function FinalCTA() {
             />
             <div className="relative max-w-2xl">
               <h2 className="font-display text-3xl font-bold tracking-tight sm:text-5xl">
-                From idea to launch — without ops stress
+                Start the fully automated AI business
               </h2>
               <p className="mt-4 text-base leading-relaxed text-white/65 sm:text-lg">
-                Book a demo. We&apos;ll map one process, show the evidence model,
-                and scope a fixed-price pilot with a clear guarantee.
+                Website design, SEO, GEO, AEO, a mobile application, and an AI
+                agent. Unhappy? Don&apos;t pay.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/contact" className="btn-primary !bg-accent !text-accent-ink hover:!bg-accent-hot">

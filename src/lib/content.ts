@@ -1,21 +1,19 @@
 export const site = {
   name: "Kairo",
-  tagline: "AI agents for enterprise operations",
+  tagline: "A cash-flowing AI agency",
   description:
-    "Kairo deploys governed AI agents that capture how your process actually runs, then audit and execute work inside SAP, portals, spreadsheets, and inboxes — with humans in control.",
+    "Kairo builds a fully automated AI business: website design, SEO, GEO, AEO, a mobile application, and an AI agent that runs marketing and follow-up.",
   email: "hello@kairo.ai",
   phone: "+1 (415) 555-0142",
 };
 
 export const trustedBy = [
-  "Rohlik Group",
-  "Notino",
-  "Brand24",
-  "Injective",
-  "Semrush",
-  "Trasti",
-  "GenHealth",
-  "Mosaic",
+  "Website design",
+  "SEO",
+  "GEO",
+  "AEO",
+  "Mobile application",
+  "AI agent",
 ];
 
 export type Solution = {
@@ -32,91 +30,135 @@ export type Solution = {
 
 export const solutions: Solution[] = [
   {
-    id: "freight",
-    title: "Freight Audit",
+    id: "website-design",
+    title: "Website design",
     description:
-      "Audit 100% of carrier invoices against contracts before payment. Typically recover 3–5% of freight spend.",
-    guarantee: "Find at least 3% or the audit is free",
-    metric: "3–5%",
-    metricLabel: "spend recovered",
+      "A conversion-focused website that explains the offer and hands visitors into marketing, follow-up, and sales.",
+    guarantee: "Unhappy? Don't pay",
+    metric: "01",
+    metricLabel: "build the site",
     problem:
-      "Carrier invoices slip through with rate errors, accessorials, and contract mismatches. Teams sample a fraction — leakage compounds every month.",
+      "Attention has nowhere useful to land. Without a clear site, social, search, and campaigns cannot turn a visit into a lead.",
     approach: [
-      "Ingest invoices, contracts, and shipment data from TMS, email, and portals",
-      "Agents match every line to contracted rates and service levels",
-      "Exceptions queue for human approval before claims are filed",
-      "Evidence packs write back to finance systems with full audit trails",
+      "Shape the offer so a new visitor understands it quickly",
+      "Design the pages marketing and social will send people to",
+      "Place the forms and calls to action that start a lead",
+      "Connect the site to the AI agent for follow-up",
     ],
     outcomes: [
-      "100% invoice coverage instead of sampling",
-      "Typical 3–5% freight spend recovered",
-      "Claims filed with contract-backed evidence",
+      "A website that supports leads and sales",
+      "A clear next step for every visitor",
+      "A starting point for the rest of the system",
     ],
   },
   {
-    id: "payables",
-    title: "Payables Audit",
+    id: "seo",
+    title: "SEO",
     description:
-      "Match supplier invoices to POs, receipts, and contracts before the payment run.",
-    guarantee: "Find 5× the run price or it’s free",
-    metric: "5×",
-    metricLabel: "validated value",
+      "Search engine optimization so the website can be found for the searches your buyers already type.",
+    guarantee: "Built into the website, not bolted on later",
+    metric: "02",
+    metricLabel: "search visibility",
     problem:
-      "Payment runs push duplicate invoices, missed credits, and PO mismatches. Finding them after money leaves is expensive and slow.",
+      "A new site stays invisible if pages are not structured for search. Traffic never starts, so the funnel stays empty.",
     approach: [
-      "Reconcile invoices against POs, goods receipts, and statements",
-      "Flag duplicates, price variance, and missing credits before payment",
-      "Route high-risk items through human approval gates",
-      "Export validated exceptions with replayable run history",
+      "Map the pages to the searches that match the offer",
+      "Write titles, headings, and page copy for those searches",
+      "Keep the site fast and clear enough for search engines to read",
+      "Send the visits into the same lead path as campaigns",
     ],
     outcomes: [
-      "Errors caught before the payment run",
-      "Guaranteed validated value vs. pilot price",
-      "Finance-ready evidence for every exception",
+      "Pages that can rank for real searches",
+      "A steady path from search to the website",
+      "Leads that can be followed up",
     ],
   },
   {
-    id: "inventory",
-    title: "Inventory Ops",
+    id: "geo",
+    title: "GEO",
     description:
-      "Replenishment, transfers, and availability workflows across ERP and supplier portals.",
-    guarantee: "Human approval on every sensitive write",
-    metric: "15%",
-    metricLabel: "availability lift",
+      "Generative engine optimization so AI answers can mention the business when someone asks a related question.",
+    guarantee: "Written so AI systems can quote the offer clearly",
+    metric: "03",
+    metricLabel: "AI answers",
     problem:
-      "Stock gaps hide across warehouses, portals, and spreadsheets. Planners chase exceptions manually while availability slips.",
+      "Buyers ask ChatGPT and other AI tools instead of only scrolling search results. If the offer is vague, the business never appears in those answers.",
     approach: [
-      "Monitor availability signals across ERP and supplier portals",
-      "Propose replenishment and transfer actions with context",
-      "Require human approval on every sensitive write-back",
-      "Close the loop with status updates and exception learning",
+      "State the offer in plain language an AI model can reuse",
+      "Publish clear pages for the questions people ask",
+      "Keep facts consistent across the site and marketing",
+      "Point those answers at the website and the next step",
     ],
     outcomes: [
-      "Faster gap closure across sites",
-      "Measurable availability lift in weeks",
-      "Operators stay in control of writes",
+      "A clearer presence inside AI-generated answers",
+      "The same offer, told the same way everywhere",
+      "Visits that still land on the website",
     ],
   },
   {
-    id: "claims",
-    title: "Claims & Deductions",
+    id: "aeo",
+    title: "AEO",
     description:
-      "Dispute OTIF fines, recover deductions, and close returns with full evidence packs.",
-    guarantee: "Audit-ready run history on every case",
-    metric: "E2E",
-    metricLabel: "case closure",
+      "Answer engine optimization so the business is the direct answer, not only a link buried under a result.",
+    guarantee: "One clear answer for each important question",
+    metric: "04",
+    metricLabel: "direct answers",
     problem:
-      "OTIF fines and deductions pile up without owners. Evidence is scattered — disputes stall and money stays unrecovered.",
+      "Search and AI surfaces show a short answer first. Pages that never answer the question lose the click.",
     approach: [
-      "Detect fine and deduction events from carrier and retailer feeds",
-      "Assemble shipment, contract, and correspondence evidence",
-      "Draft disputes and route for human sign-off",
-      "Track cases to closure with end-to-end audit history",
+      "Pick the questions a buyer asks before they buy",
+      "Answer each one in the first lines of the page",
+      "Use structure that answer engines can lift",
+      "Send the reader to a form, a call, or the agent",
     ],
     outcomes: [
-      "Faster dispute cycles with complete packs",
-      "Recovered deductions with clear ownership",
-      "Audit-ready history for every case",
+      "Pages that answer before they sell",
+      "A better chance to be the cited answer",
+      "A handoff into follow-up",
+    ],
+  },
+  {
+    id: "mobile-application",
+    title: "Mobile application",
+    description:
+      "A mobile app for the parts of the business people need in their pocket: offers, leads, and the next action.",
+    guarantee: "The app serves the same offer as the website",
+    metric: "05",
+    metricLabel: "on the phone",
+    problem:
+      "The website captures the visit, then the conversation dies when the person is away from a desktop.",
+    approach: [
+      "Decide which actions must work on a phone",
+      "Build the app around leads, follow-up, and the offer",
+      "Keep the same path as the website and campaigns",
+      "Hand repeat work to the AI agent",
+    ],
+    outcomes: [
+      "A mobile place for the same business system",
+      "Leads that can be worked from a phone",
+      "One offer across site, search, and app",
+    ],
+  },
+  {
+    id: "ai-agent",
+    title: "AI agent",
+    description:
+      "Access to an AI agent platform that researches, writes, follows up, and helps book the next conversation.",
+    guarantee: "A person reviews anything that should not send itself",
+    metric: "06",
+    metricLabel: "agent platform",
+    problem:
+      "Leads arrive and then sit. Nobody researches them, writes the note, or books the call.",
+    approach: [
+      "Connect a chat model, memory, Gmail, and Google Calendar",
+      "Add HTTP requests, a calculator, and knowledge search",
+      "Run agents for cold email, research, marketing, and follow-up",
+      "Show leads, replies, and booked calls on the dashboard",
+    ],
+    outcomes: [
+      "An agent that moves the repeat work",
+      "Cold email that starts with research, not a blast",
+      "A dashboard for campaigns and follow-up",
     ],
   },
 ];
@@ -124,127 +166,130 @@ export const solutions: Solution[] = [
 export const capabilities = [
   {
     number: "01",
-    title: "Process capture",
-    text: "Walkthroughs, interviews, and documents become a shared process catalogue with BPMN export.",
+    title: "Website and presence",
+    text: "Build the website, then social and marketing so the offer has somewhere to send people.",
   },
   {
     number: "02",
-    title: "Governed agents",
-    text: "Agents run across APIs, browsers, and files with RBAC, SSO, policy gates, and approvals.",
+    title: "SEO, GEO, and AEO",
+    text: "Make the business findable in search, in AI answers, and as the direct answer to a question.",
   },
   {
     number: "03",
-    title: "Outcome guarantees",
-    text: "Fixed price per completed unit of work — not seats, not toolkit licenses.",
+    title: "Marketing campaigns",
+    text: "Set up and launch campaigns that create visits, leads, and sales conversations.",
   },
   {
     number: "04",
-    title: "Evidence by default",
-    text: "Every action writes back with replayable audit trails for finance and ops sign-off.",
+    title: "Mobile application",
+    text: "Put the same offer and follow-up on a phone, so the path does not stop at the desktop.",
   },
   {
     number: "05",
-    title: "Messy systems ready",
-    text: "Where APIs are incomplete, Kairo combines hosted connections, browser automation, and MCP.",
+    title: "AI agent platform",
+    text: "Connect a chat model, memory, Gmail, Google Calendar, HTTP, and search so follow-up can run.",
   },
 ];
 
 export const platformSteps = [
   {
-    title: "Capture",
-    text: "Map the real process from walkthroughs, systems, and documents.",
+    title: "Connect",
+    text: "Link a chat model with memory, Gmail, Google Calendar, HTTP requests, and search.",
   },
   {
-    title: "Govern",
-    text: "Set policies, roles, and human approval gates before agents act.",
+    title: "Launch",
+    text: "Put the website, campaigns, and mobile app on one offer.",
   },
   {
-    title: "Execute",
-    text: "Run across SAP, portals, sheets, and inboxes — APIs or browsers.",
+    title: "Automate",
+    text: "The AI agent researches, writes, follows up, and helps book the next conversation.",
   },
   {
-    title: "Prove",
-    text: "Write outcomes back with evidence packs finance can sign off.",
+    title: "Review",
+    text: "Read leads, replies, booked calls, and campaigns on the dashboard.",
   },
 ];
 
 export const results = [
   {
-    company: "Notino",
-    industry: "E-commerce",
-    title: "Freed ~€40M working capital",
-    detail: "DSO cut from 70–120 days to 15 with automated collections ops.",
-    tags: ["Finance", "Working capital"],
-    value: 40,
-    suffix: "M€",
+    company: "Example view",
+    industry: "Source video",
+    title: "Dashboard of leads, calls, and cash",
+    detail:
+      "The source video shows a sample dashboard: contacted leads, positive replies, booked calls, and cash collected. Those figures are an example view, not verified Kairo client results.",
+    tags: ["Example", "Not a guarantee"],
+    value: 35,
+    suffix: "k",
   },
   {
-    company: "Rohlik Group",
-    industry: "Grocery logistics",
-    title: "€2.1M revenue protected / year",
-    detail: "Inbound invoice errors fixed at source before payment leakage.",
-    tags: ["Payables", "Supply chain"],
-    value: 2.1,
-    suffix: "M€",
+    company: "Example view",
+    industry: "Source video",
+    title: "Cold email campaigns in one place",
+    detail:
+      "The video shows a cold email campaign agent with active campaigns, reply rate, and booked calls. It is a product example, not a promise of those numbers.",
+    tags: ["AI agent", "Example"],
+    value: 4,
+    suffix: "",
   },
   {
-    company: "Pilulka",
-    industry: "Health retail",
-    title: "15% stock availability in 2 weeks",
-    detail: "Replenishment agents closed gaps across warehouses and suppliers.",
-    tags: ["Inventory", "Ops"],
-    value: 15,
-    suffix: "%",
+    company: "The offer",
+    industry: "Cash-flowing AI agency",
+    title: "Unhappy? Don't pay",
+    detail:
+      "The whiteboard in the source video states the guarantee in plain language. Paid scope is still confirmed in writing.",
+    tags: ["Guarantee"],
+    value: 0,
+    suffix: "",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Kairo moves at startup speed while keeping craft, clarity, and control — rare for enterprise automation.",
-    name: "Bryant Chou",
-    role: "Co-Founder, Ploy AI",
+      "A fully automated AI business starts with the website, then search, then campaigns, then the agent that follows up.",
+    name: "The path",
+    role: "Website → SEO, GEO, AEO → campaigns → agent",
   },
   {
     quote:
-      "They understood the operational mess. Agents handled the repetitive work; our team kept the judgment calls.",
-    name: "Julie Lee",
-    role: "Injective",
+      "GEO is how the offer shows up inside an AI answer. AEO is how it becomes the short answer itself. SEO is how search still finds the page.",
+    name: "The visibility",
+    role: "SEO, GEO, and AEO",
   },
   {
     quote:
-      "Quick iterations, clear communication, and deliverables that exceeded what we scoped for finance ops.",
-    name: "Maxim Shen",
-    role: "Mosaic Markets",
+      "The agent connects a chat model, memory, Gmail, Google Calendar, HTTP requests, a calculator, and knowledge search.",
+    name: "The workflow",
+    role: "AI agent platform",
   },
   {
     quote:
-      "World-class execution with Slack-native project rhythm. Responsiveness and design of the ops UI were top-notch.",
-    name: "Michał Sadowski",
-    role: "Brand24",
+      "The mobile app carries the same offer off the desktop, so a lead can still move to a call.",
+    name: "The phone",
+    role: "Mobile application",
   },
 ];
 
 export const faqs = [
   {
-    q: "What does Kairo do, and who is it for?",
-    a: "Kairo is an agentic automation platform for supply chain, logistics, and finance leaders. Production agents capture real processes, then audit and run work inside your existing systems with humans in the loop.",
+    q: "What does Kairo do?",
+    a: "Kairo builds a cash-flowing AI business: website design, SEO, GEO, AEO, a mobile application, and an AI agent for marketing and follow-up.",
   },
   {
-    q: "How are Kairo agents different from chatbots or RPA?",
-    a: "Agents execute real operational work across SAP, portals, spreadsheets, and inboxes. They pause for human approval on sensitive actions, keep audit trails, and are sold against guaranteed business outcomes — not seats.",
+    q: "What are SEO, GEO, and AEO?",
+    a: "SEO helps the site show up in search. GEO helps it show up when an AI model writes an answer. AEO helps the business be the short, direct answer to a buyer’s question.",
   },
   {
-    q: "Can agents work without clean APIs?",
-    a: "Yes. Hosted connections, browser automation, custom MCP servers, and approval gates let agents work across messy enterprise systems.",
+    q: "What does the AI agent connect to?",
+    a: "The agent platform connects a chat model, memory, Gmail, Google Calendar, HTTP requests, a calculator, and knowledge search. Typical work includes cold email, research, marketing, and follow-up. A person reviews what should not send itself.",
   },
   {
-    q: "Is there a public sandbox?",
-    a: "Evaluation workspaces are provisioned after a technical demo or approved pilot. Book a call and we’ll set up a scoped environment for your team.",
+    q: "What does the mobile application cover?",
+    a: "The app carries the same offer as the website: leads, the next action, and follow-up, so the business is not only a desktop site.",
   },
   {
-    q: "How do pilots and pricing work?",
-    a: "Pilots run on a fixed price per completed unit of work. Outcomes are measurable — recoveries found, cases closed, hours returned — before you scale.",
+    q: "What if the work is not right?",
+    a: "The offer on the source material is simple: unhappy, don't pay. Scope is confirmed in writing before paid work starts.",
   },
 ];
 

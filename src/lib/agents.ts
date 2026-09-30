@@ -1,28 +1,28 @@
 /** Frontend agent catalogue (English UI copy). Live status comes from Node.js API. */
 export const agentsCatalog = [
   {
-    id: "freight-auditor",
-    name: "Freight Auditor",
-    role: "Audits carrier invoices against contracts before payment",
-    systems: ["TMS", "Email", "Contracts"],
+    id: "cold-email-agent",
+    name: "Cold Email Campaign Agent",
+    role: "Researches prospects and runs personalized outreach",
+    systems: ["Gmail", "AI writer", "Search"],
   },
   {
-    id: "payables-matcher",
-    name: "Payables Matcher",
-    role: "Reconciles supplier invoices to POs and goods receipts",
-    systems: ["SAP", "Portals", "Sheets"],
+    id: "lead-agent",
+    name: "Lead Generation Agent",
+    role: "Finds people who can enter the website funnel",
+    systems: ["Chat model", "Search", "Memory"],
   },
   {
-    id: "inventory-planner",
-    name: "Inventory Planner",
-    role: "Closes stock gaps with replenishment and transfer proposals",
-    systems: ["ERP", "Supplier portals"],
+    id: "marketing-agent",
+    name: "Marketing Agent",
+    role: "Supports campaigns for SEO, GEO, and AEO traffic",
+    systems: ["HTTP", "Memory", "Chat model"],
   },
   {
-    id: "claims-agent",
-    name: "Claims Agent",
-    role: "Disputes OTIF fines and recovers deductions end to end",
-    systems: ["Carrier feeds", "Inbox"],
+    id: "follow-up-agent",
+    name: "Follow-up Agent",
+    role: "Continues the conversation and helps book the next call",
+    systems: ["Gmail", "Google Calendar", "Memory"],
   },
 ] as const;
 

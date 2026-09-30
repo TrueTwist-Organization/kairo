@@ -14,13 +14,13 @@ export function FAQ() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-soft">
               We&apos;ve got your back
             </p>
             <h2 className="font-display mt-3 text-3xl font-bold tracking-tight sm:text-5xl">
               FAQ
             </h2>
-            <p className="mt-4 text-muted">
+            <p className="mt-4 text-ink-soft">
               Straight answers for founders, ops leads, and IT partners evaluating
               agentic automation.
             </p>
@@ -39,7 +39,7 @@ export function FAQ() {
                       aria-expanded={isOpen}
                     >
                       <span className="font-display text-base font-semibold sm:text-lg">
-                        <span className="mr-3 text-muted">
+                        <span className="mr-3 text-ink-soft">
                           {String(i + 1).padStart(2, "0")}
                         </span>
                         {item.q}
@@ -54,7 +54,7 @@ export function FAQ() {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.28 }}
                         >
-                          <p className="border-t border-line px-5 py-4 text-sm leading-relaxed text-muted">
+                          <p className="border-t border-line px-5 py-4 text-sm leading-relaxed text-ink-soft">
                             {item.a}
                           </p>
                         </motion.div>
